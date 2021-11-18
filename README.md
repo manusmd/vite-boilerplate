@@ -1,13 +1,3 @@
-<p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#related">Related</a> •
-  <a href="#license">License</a>
-  <a href="#test-1">Test</a>
-</p>
-
 # Vite Boilerplate
 
 > Quickly bootstrap a new project with Vite Boilerplate.
@@ -17,7 +7,7 @@ You can use it to quickly bootstrap your project.
 
 ESLint, stylelint, prettier, husky and lintstaged are configured to give you a solid development experience.
 
-## Installing / Developing
+## Installing and Developing
 
 First, [create a repository from this template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template).
 
