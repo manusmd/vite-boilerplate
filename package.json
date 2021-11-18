@@ -2,14 +2,18 @@
   "name": "vite-boilerplate",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev-client": "vite",
+    "dev-server": "ts-node-dev --project server/tsconfig.json server/index.ts",
+    "build": "npm run build-client && npm run build-server",
+    "build-client": "tsc && vite build",
+    "build-server": "tsc --project server/tsconfig.json",
     "serve": "vite preview",
     "lint": "stylelint \"**/*.css\" && eslint . && prettier . --check",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint-fix": "stylelint \"**/*.css\" --fix && eslint . --fix && prettier . --check"
+    "lint-fix": "stylelint \"**/*.css\" --fix && eslint . --fix && prettier . --check",
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -39,6 +43,7 @@
     "stylelint": "^14.1.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^24.0.0",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.3.2",
     "vite": "^2.6.4"
   }
